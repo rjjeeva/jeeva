@@ -248,3 +248,38 @@ header nav li:hover a::after {
 .contact-icon:hover ,#contact a:hover span,#contact a:hover i{
   color: #FF8660 !important; /* your gradient color */
 }
+
+/* Mobile Bottom Nav */
+/* Mobile Bottom Navigation */
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #121212;
+  border-top: 1px solid #242424;
+  padding: 12px 0;
+  z-index: 9999;
+  justify-content: space-around;
+  align-items: center;
+  display: flex; /* <-- FIXED */
+}
+
+.mobile-nav a {
+  color: #cfcfcf;
+  font-size: 1.45rem;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.mobile-nav a.active,
+.mobile-nav a:hover {
+  color: #FF8660;
+}
+
+/* Hide on Desktop Only */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
+  }
+}
